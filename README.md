@@ -1,3 +1,4 @@
+# vscode-cursor
 # CampusXATL
 
 A Flutter-based marketplace app for campus services at Georgia State University, similar to Uber but for student-to-student services.
