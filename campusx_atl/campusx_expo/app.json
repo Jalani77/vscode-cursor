@@ -16,8 +16,13 @@
       "supportsTablet": false,
       "bundleIdentifier": "com.campusx.atl",
       "infoPlist": {
-        "UIBackgroundModes": ["remote-notification"],
-        "LSApplicationQueriesSchemes": ["campusxatl", "google"],
+        "UIBackgroundModes": [
+          "remote-notification"
+        ],
+        "LSApplicationQueriesSchemes": [
+          "campusxatl",
+          "google"
+        ],
         "NSUserTrackingUsageDescription": "We use this identifier to personalize content."
       }
     },
@@ -29,13 +34,24 @@
       }
     },
     "plugins": [
-      ["@stripe/stripe-react-native", { "merchantIdentifier": "merchant.com.campusx.atl", "enableGooglePay": true }],
-      ["expo-notifications"],
-      ["expo-router"]
+      [
+        "@stripe/stripe-react-native",
+        {
+          "merchantIdentifier": "merchant.com.campusx.atl",
+          "enableGooglePay": true
+        }
+      ],
+      [
+        "expo-notifications"
+      ],
+      [
+        "expo-router"
+      ]
     ],
     "extra": {
+      "router": {},
       "eas": {
-        "projectId": "${EAS_PROJECT_ID:-}"
+        "projectId": "e4e13759-5e95-4242-abed-960d8703624d"
       }
     }
   }
