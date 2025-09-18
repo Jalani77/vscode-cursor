@@ -1,3 +1,33 @@
+# Flutter/Dart/Pub
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+build/
+
+# iOS
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/ephemeral/
+ios/.symlinks/
+Pods/
+ios/Runner/GeneratedPluginRegistrant.*
+
+# Android (not used but safe)
+**/local.properties
+
+# VSCode/IDE
+.vscode/
+.idea/
+*.iml
+
+# Secrets
+**/GoogleService-Info.plist
+**/google-services.json
+.env
+
 # Miscellaneous
 *.class
 *.log
