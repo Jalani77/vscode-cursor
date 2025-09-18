@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "CampusXATL",
+    "slug": "campusx-expo",
+    "scheme": "campusxatl",
+    "owner": "jalani",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.campusx.atl",
+      "infoPlist": {
+        "UIBackgroundModes": ["remote-notification"],
+        "LSApplicationQueriesSchemes": ["campusxatl", "google"],
+        "NSUserTrackingUsageDescription": "We use this identifier to personalize content."
+      }
+    },
+    "android": {
+      "package": "com.campusx.atl",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "plugins": [
+      ["@stripe/stripe-react-native", { "merchantIdentifier": "merchant.com.campusx.atl", "enableGooglePay": true }],
+      ["expo-notifications"],
+      ["expo-router"]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "${EAS_PROJECT_ID:-}"
+      }
+    }
+  }
+}
