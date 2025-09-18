@@ -33,10 +33,6 @@
       ["expo-notifications"],
       ["expo-router"]
     ],
-    "extra": {
-      "eas": {
-        "projectId": "${EAS_PROJECT_ID:-}"
-      }
-    }
+    "extra": {}
   }
 }
