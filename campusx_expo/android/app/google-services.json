@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "41793694574",
+    "project_id": "campusx-atl",
+    "storage_bucket": "campusx-atl.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41793694574:android:33bcfedd6b3f80c527af7f",
+        "android_client_info": {
+          "package_name": "com.campusx_atl"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu0MOxuHH22jddeFPAItJCYqHiGbs0nGE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+
