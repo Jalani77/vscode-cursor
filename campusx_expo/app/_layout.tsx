@@ -1,10 +1,16 @@
-import { Stack } from 'expo-router';
+import { Stack, Tabs } from 'expo-router';
+import { AppStateProvider } from '@/lib/state';
 
 export default function RootLayout() {
-	return (
-		<Stack>
-			<Stack.Screen name="index" options={{ headerShown: false }} />
-			<Stack.Screen name="auth" options={{ title: 'Sign In' }} />
-		</Stack>
-	);
+    return (
+        <AppStateProvider>
+            <Tabs screenOptions={{ headerShown: false }}>
+                <Tabs.Screen name="index" options={{ title: 'Home' }} />
+                <Tabs.Screen name="vendors" options={{ title: 'Vendors' }} />
+                <Tabs.Screen name="post-service" options={{ title: 'Post Service' }} />
+                <Tabs.Screen name="post-request" options={{ title: 'Post Request' }} />
+                <Tabs.Screen name="requests" options={{ title: 'Requests' }} />
+            </Tabs>
+        </AppStateProvider>
+    );
 }
